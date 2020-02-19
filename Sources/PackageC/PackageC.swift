@@ -11,3 +11,11 @@ public struct PackageC {
         public init() {}
     }
 }
+
+public extension PackageA {
+    init(text: String) {
+        var a = PackageA()
+        a.text = "Hello, \(text)"
+        self = a
+    }
+}
