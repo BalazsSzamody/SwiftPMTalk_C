@@ -23,3 +23,9 @@ public extension PackageA {
         self = a
     }
 }
+
+struct CustomText_Previews: PreviewProvider {
+    static var previews: some View {
+        PackageC.CustomText()
+    }
+}
