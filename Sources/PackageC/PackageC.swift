@@ -3,12 +3,16 @@ import PackageA
 
 public struct PackageC {
     public struct CustomText: View {
-        let source = PackageA()
+        var source = PackageA()
         public var body: some View {
             Text(source.text)
         }
         
         public init() {}
+        
+        public init(_ a: PackageA) {
+            source = a
+        }
     }
 }
 
